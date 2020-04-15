@@ -1,0 +1,3 @@
+include "nacos-client"
+
+rootProject.name = "nacos-achieve"
