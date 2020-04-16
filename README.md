@@ -4,7 +4,7 @@
 [![Java CI](https://github.com/aaric/nacos-achieve/workflows/Java%20CI/badge.svg)](https://github.com/aaric/nacos-achieve/actions)
 [![openjdk-11](https://img.shields.io/badge/openjdk-11-brightgreen.svg?style=flat&logo=java)](http://openjdk.java.net)
 [![gradle](https://img.shields.io/badge/gradle-5.6.2-brightgreen.svg?style=flat&logo=gradle)](https://gradle.org)
-[![release](https://img.shields.io/badge/release-0.1.0-blue.svg)](https://github.com/aaric/nacos-achieve/releases)
+[![release](https://img.shields.io/badge/release-0.2.0-blue.svg)](https://github.com/aaric/nacos-achieve/releases)
 
 > [Nacos Learning.](https://nacos.io/zh-cn/docs/what-is-nacos.html)
 
