@@ -1,6 +1,3 @@
-group "com.incarcloud"
-version "0.2.0-SNAPSHOT"
-
 buildscript {
     ext {
         lombokVersion = "4.1.6"
@@ -20,11 +17,13 @@ buildscript {
         classpath "org.junit.platform:junit-platform-gradle-plugin:$junitPlatformVersion"
         classpath "io.spring.gradle:dependency-management-plugin:$dependencyManagementVersion"
         classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
-        classpath "gradle.plugin.com.google.protobuf:protobuf-gradle-plugin:$protobufVersion"
     }
 }
 
 allprojects {
+    group "com.incarcloud"
+    version "0.2.0-SNAPSHOT"
+
     apply plugin: "java"
     apply plugin: "io.spring.dependency-management"
 
@@ -62,7 +61,6 @@ allprojects {
 subprojects {
     apply plugin: "checkstyle"
     apply plugin: "io.freefair.lombok"
-    apply plugin: "com.google.protobuf"
 
     configurations {
         developmentOnly
