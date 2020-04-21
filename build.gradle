@@ -3,8 +3,9 @@ buildscript {
         lombokVersion = "4.1.6"
         junitPlatformVersion = "1.2.0"
         dependencyManagementVersion = "1.0.9.RELEASE"
-        springBootVersion = "2.2.6.RELEASE"
-        protobufVersion = "0.8.12"
+        springBootVersion = "2.2.5.RELEASE"
+        springCloudVersion = "Hoxton.SR3"
+        springCloudAlibabaVersion = "2.2.1.RELEASE"
     }
 
     repositories {
@@ -22,7 +23,7 @@ buildscript {
 
 allprojects {
     group "com.incarcloud"
-    version "0.2.0-SNAPSHOT"
+    version "0.3.0-SNAPSHOT"
 
     apply plugin: "java"
     apply plugin: "io.spring.dependency-management"
@@ -38,6 +39,8 @@ allprojects {
     dependencyManagement {
         imports {
             mavenBom "org.springframework.boot:spring-boot-dependencies:$springBootVersion"
+            mavenBom "org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion"
+            mavenBom "com.alibaba.cloud:spring-cloud-alibaba-dependencies:$springCloudAlibabaVersion"
         }
 
         dependencies {
