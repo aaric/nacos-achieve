@@ -4,7 +4,7 @@
 [![java](https://img.shields.io/badge/java-11-brightgreen.svg?style=flat&logo=java)](https://www.oracle.com/java/technologies/javase-downloads.html)
 [![gradle](https://img.shields.io/badge/gradle-5.6.2-brightgreen.svg?style=flat&logo=gradle)](https://docs.gradle.org/5.6.2/userguide/installation.html)
 [![build](https://github.com/aaric/nacos-achieve/workflows/build/badge.svg)](https://github.com/aaric/nacos-achieve/actions)
-[![release](https://img.shields.io/badge/release-0.2.1-blue.svg)](https://github.com/aaric/nacos-achieve/releases)
+[![release](https://img.shields.io/badge/release-0.3.0-blue.svg)](https://github.com/aaric/nacos-achieve/releases)
 
 > [Nacos Learning.](https://nacos.io/zh-cn/docs/what-is-nacos.html)
 
@@ -28,7 +28,7 @@ sudo chown -R admin:admin /opt/nacos
 
 ### 浏览器访问
 
-[http://k8s-master:8848/nacos](http://k8s-master:8848/nacos)
+[http://localhost:8848/nacos](http://localhost:8848/nacos)
 
 - 访问账号：nacos
 - 访问密码：nacos
