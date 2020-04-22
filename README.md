@@ -28,7 +28,7 @@ sudo chown -R admin:admin /opt/nacos
 
 ### 浏览器访问
 
-[http://k8s-master:8848/nacos](http://k8s-master:8848/nacos)
+[http://localhost:8848/nacos](http://localhost:8848/nacos)
 
 - 访问账号：nacos
 - 访问密码：nacos
