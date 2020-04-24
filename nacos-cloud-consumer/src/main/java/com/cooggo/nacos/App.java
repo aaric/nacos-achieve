@@ -2,15 +2,17 @@ package com.cooggo.nacos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * 配置测试启动类
+ * 服务发现测试（消费者）启动类
  *
- * @author Aaric, created on 2020-04-21T19:52.
- * @version 0.3.0-SNAPSHOT
+ * @author Aaric, created on 2020-04-23T11:04.
+ * @version 0.4.0-SNAPSHOT
  */
-@RefreshScope
+@EnableFeignClients
+@EnableDiscoveryClient
 @SpringBootApplication
 public class App {
 

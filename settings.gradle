@@ -1,4 +1,6 @@
 include "nacos-client"
 include "nacos-cloud-server"
+include "nacos-cloud-producer"
+include "nacos-cloud-consumer"
 
 rootProject.name = "nacos-achieve"
