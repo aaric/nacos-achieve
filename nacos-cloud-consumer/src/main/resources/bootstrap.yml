@@ -1,0 +1,39 @@
+# Tomcat settings
+server:
+  port: ${TOMCAT_SERVER_PORT:8082}
+
+# Management settings
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+# Logging settings
+logging:
+  level:
+    root: WARN
+    org:
+      springframework:
+        security: INFO
+        web: ERROR
+      hibernate: INFO
+    com:
+      cooggo: DEBUG
+  file:
+    path: ${LOGGING_FILE_PATH:./}
+    name: output.log
+    max-size: ${LOGGING_FILE_MAX_SIZE:20MB}
+
+# Spring settings
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nacos-cloud-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        group: SERVER_GROUP
+        namespace: 01ecc33d-de4b-42c8-9500-cb907dc72b17
