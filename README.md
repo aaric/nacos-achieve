@@ -61,6 +61,8 @@ spring:
 
 ### 接口调用测试示例
 
+> [Open API 指南](https://nacos.io/zh-cn/docs/open-api.html)
+
 ```bash
 curl -X POST "http://localhost:8848/nacos/v1/cs/configs?dataId=title&group=test&content=Hello%20World"
 curl -X GET "http://localhost:8848/nacos/v1/cs/configs?dataId=title&group=test"
